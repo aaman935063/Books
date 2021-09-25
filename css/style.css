@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "railway-regular";
+  src: url(/webfonts/fa-regular-400.ttf);
+}
+
+@font-face {
+  font-family: "railway-solid";
+  src: url(/webfonts/fa-solid-900.ttf);
+}
+
+@font-face {
+  font-family: "railway-brands";
+  src: url(/webfonts/fa-brands-400.ttf);
+}
+
+:root {
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-black: #2e2c2caf;
+  --light-grey: rgba(255, 255, 255, 0);
+
+
+}
+
+header a {
+  font-family: "Railway-brand";
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+header {
+  background-color: #dd2476;
+  background: var(--bggradient);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding-right: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: "Railway-solid";
+  color: white;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+  margin: 50px;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  padding: 0.1em 0em;
+  font-weight: bold;
+  font-size: 8vmin;
+
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* section 1 */
+.section-1 {
+  padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 9vmin;
+  left: -17vmin;
+  background: white;
+  text-align: left;
+  border-radius: 3px;
+  padding: 13vmin 15vmin 10vmin 10vmin;
+  box-shadow: 0 20px 42px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(../images/swim.jpg) no-repeat center center/cover;
+}
+
+.cover .content {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  padding-top: 10vmin;
+}
+
+.cover .content>h1 {
+  font-family: "Railway-brand";
+  font-size: 10vmin;
+  color: whitesmoke;
+}
+
+.cover .content>p {
+  font-family: "Railway-regular";
+  font-size: 3vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: .5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect p {
+  font-family: "Railway-brand";
+}
+
+.purchase>h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em;
+  font-family: "Railway-solid";
+}
+
+.purchase>p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+}
+
+.cus-carousel.owl-carousel .owl-item img {
+  display: block;
+  width: 70%;
+}
+
+.purchase .cards .card {
+  width: (calc(100% / 3)-80px);
+
+  margin: 17px;
+  box-shadow: 0;
+
+  transition: all .3s ease;
+  transform: translateY(0);
+}
+
+.purchase .cards .card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  transform: translateY(-10px);
+
+}
+
+.purchase .cards .card a.btn {
+  color: white;
+  background: #ff5c58;
+  transition: all .3s ease;
+
+}
+
+.purchase .cards .card a.btn:hover {
+
+  color: white;
+  background: #fe8f8f;
+
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  background: rgba(208, 241, 241, 0.1);
+  padding: 1.4rem 2.5rem;
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.1);
+  border-top-left-radius: 170px;
+  border-top-right-radius: 170px;
+}
+
+.card-body .pricing>h1 {
+  font-size: 10vmin;
+  padding: 1em 0.5em;
+}
+
+.customize-card {
+  border-radius: 50% !important;
+  height: 70% !important;
+  width: 70% !important;
+
+}
+
+/* section-3 */
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12>h1 {
+
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12>p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-black);
+  font-size: 3.4vmin;
+}
+
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+  transition: all .3s ease;
+
+}
+
+.cust-shadow {
+  transform: translateY(0);
+
+  transition: all .3s ease;
+}
+
+.cust-shadow:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  transform: translateY(-10px);
+
+  transition: all .3s ease;
+}
+
+.section-3 .desktop:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.section-3 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+  font-size: 2vmin;
+}
+
+/* section-4 */
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: (calc(100% - 3)-30px);
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card .card-body>a {
+  font-size: 1.5em;
+}
+
+.border-radius {
+  border-radius: 340px;
+
+}
+
+.rounded {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+  background: rgba(0, 0, 0, 0.819);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p>span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background-color: linear-gradient(to bottom, #dd2476, #ff512f);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+footer .column a:hover i {
+  color: #ffffff;
+}
+
+footer .column i+i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+.img-style {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.card-two::before {
+  content: "";
+  background: url(/images/pexels-andrea-piacquadio-842567.jpg) no-repeat center center/cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
